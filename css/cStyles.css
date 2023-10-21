@@ -1,0 +1,239 @@
+/* form */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navBarBg {
+  max-width: 100%;
+  background: #fff;
+}
+
+.navBar {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 100px;
+}
+.navBar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+.navBar ul li a {
+  text-decoration: none;
+  color: #3753a4;
+  font-weight: 400;
+}
+
+.logo {
+  width: 150px;
+}
+
+.hdrBtn {
+  display: flex;
+  align-items: center;
+}
+
+.Language {
+  text-decoration: none;
+  color: #3753a4;
+  margin-right: 15px;
+  font-weight: 400;
+}
+
+.login-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #d32229;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+body {
+  background: linear-gradient(90deg, #ff4f55 0%, #cf373c 30%, #3753a4 30%, #3753a4 100%);
+}
+
+.contactUs {
+  position: relative;
+  width: 100%;
+  padding: 30px 100px;
+}
+.contactUs .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+.contactUs .title h2 {
+  color: aliceblue;
+  font-weight: 500;
+}
+
+.Form {
+  grid-area: Form;
+}
+
+.Info {
+  grid-area: Info;
+}
+.Info .infoBox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.Info .infoBox div span {
+  min-width: 25px;
+  height: 25px;
+  color: #fff;
+  background-color: #d32229;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.Info .infoBox div a {
+  color: #000;
+  text-decoration: none;
+}
+
+.Map {
+  grid-area: Map;
+  padding: 20px;
+}
+.Map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.contact h3 {
+  color: #3753a4;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas: "Form Info" "Form Map";
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.formBox {
+  position: relative;
+  width: 100%;
+}
+.formBox .row100 .inputBox {
+  width: 100%;
+}
+
+.fst {
+  width: 100%;
+  height: 50%;
+}
+
+.row50 {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputBox {
+  display: inline-grid;
+  margin: 5px 0px;
+}
+.inputBox span {
+  color: #3753a4;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.inputBox input {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+  width: 425px;
+}
+.inputBox textarea {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+  resize: none;
+  min-height: 220px;
+  margin-bottom: 10px;
+}
+.inputBox input[type=submit] {
+  background: #d32229;
+  color: #fff;
+  border: none;
+  font-size: 1.1em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+  border-radius: 5px;
+}
+.inputBox::placeholder {
+  color: #999;
+}
+
+.sec {
+  width: 100%;
+}
+
+.infoBox {
+  font-size: 1.1em;
+}
+
+.sci {
+  margin-top: 40px;
+  display: flex;
+}
+.sci li {
+  list-style: none;
+  margin-right: 15px;
+}
+.sci li a {
+  font-size: 2em;
+}
+.sci li a:hover {
+  color: #d32229;
+}
+
+@media (max-width: 991px) {
+  body {
+    background: #3753a4;
+  }
+  .navBar {
+    margin: 10px 20px;
+  }
+  .contactUs {
+    padding: 20px;
+  }
+  .box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "Form" "Info" "Map";
+  }
+}/*# sourceMappingURL=cStyles.css.map */

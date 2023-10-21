@@ -1,0 +1,46 @@
+
+.radio-btn {
+	position: relative;
+	margin: 30px 10px 10px 10px;
+}
+.text1 {
+	font-size: 20px;
+}
+.radio {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.radioInput {
+	display: none;
+	&:checked {
+		+ {
+			.radio_txt {
+				&::after {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+.radio_txt {
+	width: 1.25em;
+	height: 1.25em;
+	border: 2px solid #D32229;
+	border-radius: 50%;
+	margin-right: 10px;
+	box-sizing: border-box;
+	padding: 2px;
+	font-size: 25px;
+	&::after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: #D32229;
+		border-radius: 50%;
+		transform: scale(0);
+		transition: transform 0.15s;
+	}
+}
